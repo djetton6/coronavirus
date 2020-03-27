@@ -15,7 +15,7 @@ const scatterplot = () =>
     radiusMaxPixels: 5,
     getPosition: d => [d.longitude, d.latitude],
     getFillColor: d =>
-      d.n_Deceased > 0 ? [200, 0, 40, 150] : [255, 140, 0, 100],
+      d.deceased > 0 ? [200, 0, 40, 150] : [255, 140, 0, 100],
     pickable: true
   });
 
@@ -23,7 +23,7 @@ const heatmap = () =>
   new HeatmapLayer({
     id: "heat",
     data: sourceData,
-    getPosition: d => [d.Longitude, d.Latitude],
+    getPosition: d => [d.longitude, d.Latitude],
     getWeight: d => d.n_Deceased + d.n_Confirmed * 0.5,
     radiusPixels: 60
   });
