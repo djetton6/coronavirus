@@ -13,10 +13,11 @@ const scatterplot = () =>
     opacity: 0.8,
     filled: true,
     radiusMinPixels: 10,
-    radiusMaxPixels: 50,
+    radiusMaxPixels: 70,
     getPosition: d => [d.longitude, d.latitude],
-    getFillColor: d =>
-      d.deceased > 0 ? [200, 0, 40, 150] : [255, 140, 0, 100],
+    getFillColor: d => (d.confirmed > 0 ? [0, 128, 128] : [255, 140, 0, 100]),
+    getStrokeColor: d =>
+      d.recovered > d.deceased ? [80, 200, 120] : [0, 128, 128],
     pickable: true
   });
 
@@ -25,14 +26,14 @@ const heatmap = () =>
     id: "heat",
     data: sourceData,
     getPosition: d => [d.longitude, d.latitude],
-    getWeight: d => d.deceased + d.confirmed * 0.5,
-    radiusPixels: 60
+    getWeight: d => d.confirmed + d.deceased * 0.5,
+    radiusPixels: 20
   });
 
 window.initMap = () => {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 40.0, lng: -100.0 },
-    zoom: 5,
+    zoom: 3,
     styles: mapStyles
   });
 
