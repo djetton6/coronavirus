@@ -19,6 +19,25 @@ const scatterplot = () =>
     getStrokeColor: d =>
       d.recovered > d.deceased ? [80, 200, 120] : [0, 128, 128],
     pickable: true
+    
+    onHover:({object, x, y}) => {
+      const element = document.getElementById('tooltip');
+      if (object) {
+        const {d.confirmed, d.recovered} = object;
+        element.innerHTML = `<h1>${d.country}</h1>`
+        element.style.display = 'block';
+        element.style.opacity = 0.9;
+        element.style.left = x + 'px';
+        element.style.top = y + 'px';
+      } else {
+        element.style.opacity = 0.0;
+      }
+    },
+
+    onClick: ({object, x, y}) => {
+      window.open('https://www.cnn.com/2020/04/04/health/recovery-coronavirus-tracking-data-explainer/index.html')
+    },
+
   });
 
 const heatmap = () =>
