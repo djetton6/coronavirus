@@ -51,7 +51,7 @@ const hexagon = () =>
     data: sourceData,
     getPosition: (d) => [d.longitude, d.latitude],
     getElevationWeight: (d) => d.confirmed * 2 + d.recovered,
-    elevationScale: 20000,
+    elevationScale: 10000,
     extruded: true,
     radius: 200,
     opacity: 0.6,

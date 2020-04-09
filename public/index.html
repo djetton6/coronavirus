@@ -9,6 +9,18 @@
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGeuIMrKpmEwszUqMR_jUdIW3YE_CPucw&callback=initMap"
   ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+  ></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+  />
 
   <style>
     body {
@@ -26,9 +38,54 @@
       margin: 10px;
       padding: 10px;
     }
+
+    nav {
+      background-color: #17263c;
+      border-bottom: grey;
+      border-style: solid;
+      border-width: 0.2rem;
+      padding-bottom: 1%;
+      padding-top: 1%;
+    }
+
+    h1 {
+      size: 3em;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-family: Orbitron;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      size: 1.5em;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
   </style>
 </head>
+<nav id="nav-bar">
+  <ul>
+    <h1 id="title">COVID-19 Worldwide Recovery Map</h1>
+  </ul>
+</nav>
 <body>
   <div id="map"></div>
-  <div id="tooltip"></div>
+  <div class="tile is-ancestor">
+    <!-- <div id="tooltip"></div> -->
+    <div class="tile is-6">
+      <p class="title is-1 is-spaced">Title 1</p>
+      <p class="subtitle is-3">Subtitle 3</p>
+    </div>
+    <div class="tile is-6">
+      <!-- The magical tile element! -->
+      Testing Tile
+    </div>
+  </div>
 </body>
+<footer>
+  <h2>Data from <a> </a></h2>
+  <h3>#StayHomeStaySafe</h3>
+</footer>
