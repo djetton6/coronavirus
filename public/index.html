@@ -4,6 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>COVID-19 Visualization</title>
   <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
   <script
     defer
@@ -21,50 +22,6 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
   />
-
-  <style>
-    body {
-      margin: 0;
-    }
-
-    #map {
-      width: 100vw;
-      height: 100vh;
-    }
-
-    #tooltip {
-      position: absolute;
-      background: white;
-      margin: 10px;
-      padding: 10px;
-    }
-
-    nav {
-      background-color: #17263c;
-      border-bottom: grey;
-      border-style: solid;
-      border-width: 0.2rem;
-      padding-bottom: 1%;
-      padding-top: 1%;
-    }
-
-    h1 {
-      size: 3em;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      font-family: Orbitron;
-    }
-
-    footer {
-      background: black;
-      color: white;
-      size: 1.5em;
-      text-align: center;
-      padding-top: 1%;
-      padding-bottom: 1%;
-    }
-  </style>
 </head>
 <nav id="nav-bar">
   <ul>
@@ -75,13 +32,61 @@
   <div id="map"></div>
   <div class="tile is-ancestor">
     <!-- <div id="tooltip"></div> -->
-    <div class="tile is-6">
-      <p class="title is-1 is-spaced">Title 1</p>
-      <p class="subtitle is-3">Subtitle 3</p>
+    <div class="tile is-4">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Component
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
+            <a href="#">@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Save</a>
+          <a href="#" class="card-footer-item">Edit</a>
+          <a href="#" class="card-footer-item">Delete</a>
+        </footer>
+      </div>
     </div>
-    <div class="tile is-6">
-      <!-- The magical tile element! -->
-      Testing Tile
+    <div class="tile is-4">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Component
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
+            <a href="#">@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Edit</a>
+        </footer>
+      </div>
     </div>
   </div>
 </body>
