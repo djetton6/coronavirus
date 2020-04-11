@@ -10,7 +10,7 @@ body {
 
 #tooltip {
   position: absolute;
-  background: white;
+  background: red;
   margin: 10px;
   padding: 10px;
 }
@@ -39,4 +39,8 @@ footer {
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.tile {
+  padding-left: 5%;
 }
