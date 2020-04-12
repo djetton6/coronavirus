@@ -1,6 +1,6 @@
 # Covid-19 Recovery Map
 
-COVID-19 is a pandemic that is affecting everyone's daily life. But there is hope! This project visualizes the number of cases and compares the number of diagnosed cases with recovered patients. Reminder to StayHome and Stay Safe.
+COVID-19 is a pandemic that is affecting everyone's daily life. But there is hope! This project visualizes the number of cases and compares the number of diagnosed cases with recovered patients. Reminder to #StayHome and #StaySafe.
 
 ## Getting Started
 
