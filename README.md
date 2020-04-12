@@ -7,7 +7,7 @@ COVID-19 is a pandemic that is affecting everyone's daily life. But there is hop
 1. Clone this repository on your local machine.
 2. After cloning, install the dependencies using `npm install`.
 3. Start the project by using `npm run start`.
-4. Use localhost:8080 to view the project in your browser.
+4. Use `localhost:8080` to view the project in your browser.
 
 ## Prerequisites
 
@@ -15,20 +15,21 @@ You will need a package manager, either using NPM or Yarn. This project used NPM
 
 ## Built With:
 
-Deck.GL - Uber's Data Visualization Tool
-NPM - Dependency Management
-Bulma.CSS - CSS Framework that is pretty neat
-Netlify - Great Deployment Site
-Google Maps API - <3 Google Maps
+- [Deck.GL - Uber's Data Visualization Tool](https://deck.gl/#/)
+- NPM - Dependency Management
+- [Bulma.CSS - CSS Framework](https://bulma.io/documentation/layout/tiles/)
+- Netlify - Deployment Site
+- Google Maps API - (Gotta Love Google Maps)
+- Google Sheets for Lat/Long conversion
+- Webpack Dev Server
 
 ## Contributing
 
-Data is from [NCOV2019, which was made by a self-taught teenage coder, super inspiring](https://ncov2019.live/data "NCOV2019")
+Data is from [NCOV2019, which was made by a self-taught teenage coder.](https://ncov2019.live/data "NCOV2019")
 
 ## Authors
 
 Desmend Jetton
-Hussien
 [Hussien](https://github.com/akhayoon "Hussien")
 
 License
